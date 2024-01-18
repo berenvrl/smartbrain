@@ -1,6 +1,6 @@
 import React from "react";
 
-class SignIn extends React.Component {
+class Signin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,12 +12,13 @@ class SignIn extends React.Component {
   onEmailChange = (event) => {
     this.setState({ signInEmail: event.target.value });
   };
+
   onPasswordChange = (event) => {
     this.setState({ signInPassword: event.target.value });
   };
 
   onSubmitSignIn = () => {
-    fetch("https://smartbrain-7m7t.onrender.com/signin", {
+    fetch("http://localhost:3000/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -36,9 +37,8 @@ class SignIn extends React.Component {
 
   render() {
     const { onRouteChange } = this.props;
-
     return (
-      <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
+      <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
         <main className="pa4 black-80">
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
@@ -67,7 +67,6 @@ class SignIn extends React.Component {
                   onChange={this.onPasswordChange}
                 />
               </div>
-              <label className="pa0 ma0 lh-copy f6 pointer"></label>
             </fieldset>
             <div className="">
               <input
@@ -92,4 +91,4 @@ class SignIn extends React.Component {
   }
 }
 
-export default SignIn;
+export default Signin;
