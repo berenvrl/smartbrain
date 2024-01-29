@@ -1,29 +1,25 @@
-# 🧠Smart Brain Project
+# 🧠Smart Brain Project- Frontend & Backend
 
-Project is based on face detection on a picture which of the url is used.
-Clarifai API is used for face detection.
+The project is based on face detection in a picture using the Clarifai API
 
 # Built with
 
-- JavaScript, React(v18.2)
-- particles-bg, react-parallax-tilt are used as react components.
-- tachyons is used as CSS framework
+Utilized React for the frontend development, and Node.js used along with Express.js for building the backend infrastructure
 
 # Reach Smart Brain Website
 
 You need to follow these to get the project
-1-Clone this repo
+1-Clone the repo
 2-In the project directory, you can run `npm install`
 3-Run `npm start`
 
-You can reach the project here, [smartbrain](https://smartbrainberen.netlify.app/)
+You can reach the project here, [smartbrain](https://smartbrain-7m7t.onrender.com/)
 
 # Visual of the project
 
-![sbrain](smartbrain.png)
-![sbrain](smartbrain2.png)
+![sbrain](smartbrainvisual1.png)
+![sbrain](smartbrainvisual2.png)
 
 # Acknowledgments
 
-Project is built during the course in Udemy.
-The Complete Web Developer in 2023: Zero to Mastery by Andrei Neagoie.
+The project was built during the course 'The Complete Web Developer in 2023: Zero to Mastery' on Udemy, instructed by Andrei Neagoie.
